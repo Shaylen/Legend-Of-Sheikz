@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &119932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 484098}
+  - 114: {fileID: 11428912}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &484098
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.6034908, y: 9.51272488, z: .155126184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11428912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0549e07f914405647a180d542b76cccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapGenerator: {fileID: 166528, guid: b4e558fa650b834479659978e21fae86, type: 2}
+  heroPrefab: {fileID: 191952, guid: 897456c745e376f41b00bc6ede24e4f5, type: 2}
+  floatingText: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+  levelNumber: 0
+  hero: {fileID: 0}
+  map: {fileID: 0}
+  isShuttingDown: 0
+  screenMask: {fileID: 0}
+  centerText: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: frontierTile
+      value: 
+      objectReference: {fileID: 147878, guid: 71de1a9e908a9a84f986852ebf8a5f58, type: 2}
+    - target: {fileID: 0}
+      propertyPath: rows
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: columns
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: roomsNumber
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: roomSize.minimum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: roomSize.maximum
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: acceptedGenerationTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: timeAllowed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spaceBetweenRooms
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: corridorMaxLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spaceBetweenCorridors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: monsterNumber
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: pathFinder
+      value: 
+      objectReference: {fileID: 11478616, guid: 264a35059785d2d4f970d124b0af5bf4,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: pathFinderPrefab
+      value: 
+      objectReference: {fileID: 176696, guid: 264a35059785d2d4f970d124b0af5bf4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: blockingLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mapGenerator
+      value: 
+      objectReference: {fileID: 166528, guid: b4e558fa650b834479659978e21fae86, type: 2}
+    - target: {fileID: 0}
+      propertyPath: heroPrefab
+      value: 
+      objectReference: {fileID: 191952, guid: 897456c745e376f41b00bc6ede24e4f5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: damageText
+      value: 
+      objectReference: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+    - target: {fileID: 0}
+      propertyPath: floatingText
+      value: 
+      objectReference: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 119932}
+  m_IsPrefabParent: 1

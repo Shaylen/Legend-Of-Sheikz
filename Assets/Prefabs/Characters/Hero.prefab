@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &191952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 483616}
+  - 212: {fileID: 21284262}
+  - 114: {fileID: 11489054}
+  - 114: {fileID: 11494004}
+  - 50: {fileID: 5083138}
+  - 95: {fileID: 9563466}
+  - 58: {fileID: 5810454}
+  m_Layer: 10
+  m_Name: Hero
+  m_TagString: Hero
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483616
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!50 &5083138
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &5810454
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: 539f3982b3ea44b459f049f93dc8eb37, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: .449999988
+--- !u!95 &9563466
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60efef450b6d45940850d3c106a149a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11489054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713bab26c21b97a428fbe350578f0a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  heroLight: {fileID: 197130, guid: 7d7de3d0709066e419f0e487753ae850, type: 2}
+  primarySpell: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
+  secondarySpell: {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
+  defensiveSpell: {fileID: 100004, guid: d9751637d4fc2de40a234b45e10cb88d, type: 2}
+--- !u!114 &11494004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d49ea98f2b534d40a8f5b8e01df180b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  invincibilityTime: .200000003
+  isHealable: 1
+  deathAnimation: {fileID: 175566, guid: de42499f730fb35408b284f12ebfb71f, type: 2}
+  healAnimation: {fileID: 100004, guid: d9751637d4fc2de40a234b45e10cb88d, type: 2}
+  flashingMaterial: {fileID: 2100000, guid: eb344bc0518861c4191ec8540eeaf55a, type: 2}
+--- !u!212 &21284262
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191952}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -761238155
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300014, guid: 93ca25147a7da93458625a1a97a270e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: spells.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: .449999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 539f3982b3ea44b459f049f93dc8eb37, type: 2}
+    - target: {fileID: 0}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: invincibilityTime
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: damageText
+      value: 
+      objectReference: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 0}
+      propertyPath: heroLight
+      value: 
+      objectReference: {fileID: 197130, guid: 7d7de3d0709066e419f0e487753ae850, type: 2}
+    - target: {fileID: 0}
+      propertyPath: knockbackImmuneTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: secondarySpell
+      value: 
+      objectReference: {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deathAnimation
+      value: 
+      objectReference: {fileID: 175566, guid: de42499f730fb35408b284f12ebfb71f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: defensiveSpell
+      value: 
+      objectReference: {fileID: 100004, guid: d9751637d4fc2de40a234b45e10cb88d, type: 2}
+    - target: {fileID: 0}
+      propertyPath: isHealable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: healAnimation
+      value: 
+      objectReference: {fileID: 100004, guid: d9751637d4fc2de40a234b45e10cb88d, type: 2}
+    - target: {fileID: 0}
+      propertyPath: primarySpell
+      value: 
+      objectReference: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
+    - target: {fileID: 0}
+      propertyPath: flashingMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: eb344bc0518861c4191ec8540eeaf55a, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 191952}
+  m_IsPrefabParent: 1

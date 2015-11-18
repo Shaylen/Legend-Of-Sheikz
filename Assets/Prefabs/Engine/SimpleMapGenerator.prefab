@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &166528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 442940}
+  - 114: {fileID: 11428904}
+  m_Layer: 0
+  m_Name: SimpleMapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442940
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 67.2178345, y: 17.7421112, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11428904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f1ad702e2b42a4c86b78151e757563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 100
+  columns: 100
+  roomsNumber: 50
+  roomSize:
+    minimum: 5
+    maximum: 15
+  timeAllowed: 1
+  spaceBetweenRooms: 1
+  spaceBetweenCorridors: 1
+  corridorMaxLength: 5
+  monsterNumber: 50
+  torchNumber: 50
+  distanceBetweenTorchs: 5
+  floorTiles:
+  - {fileID: 148834, guid: fe5aa106546ad704485ad468ccc0e40a, type: 2}
+  - {fileID: 149978, guid: 38ae4f1b5eb1f534e8bf11d4f96c91ae, type: 2}
+  - {fileID: 153440, guid: aa43248bf8606d147bfed019a7dc82e0, type: 2}
+  wallTiles:
+  - {fileID: 187570, guid: 4d70e1b2096796d47b6ee540bcd48e23, type: 2}
+  - {fileID: 178122, guid: 9cdf31833048f8c49b114da1b0d4eae6, type: 2}
+  - {fileID: 198846, guid: c398ae44eae578441bc8c857d80e94c5, type: 2}
+  - {fileID: 138636, guid: bbee3dd7ceb73c845a682346fc74c5dc, type: 2}
+  - {fileID: 171244, guid: be3aa368f389b5c4abf45b79009f545d, type: 2}
+  - {fileID: 109242, guid: 45a55699d1f42be4facbf151f1e1a408, type: 2}
+  - {fileID: 145890, guid: d616903a2553375489ff7c422b5d9e0f, type: 2}
+  - {fileID: 107670, guid: dd00ecbbf9c8f534783eadf42ba3d7d2, type: 2}
+  - {fileID: 118108, guid: e530d59c1ed88c14e81c21dbe25f6a08, type: 2}
+  - {fileID: 144852, guid: a6b5e53ff37bc7248889cedfaffb496b, type: 2}
+  - {fileID: 111618, guid: 32b7ce8f9de35db4387ca08e8c89b172, type: 2}
+  - {fileID: 176824, guid: 651c5aff4eaa4e9418368a346ae575c7, type: 2}
+  frontierTile: {fileID: 147878, guid: 71de1a9e908a9a84f986852ebf8a5f58, type: 2}
+  monsters:
+  - {fileID: 132528, guid: 1531406b618c2ec479185cfe0db938c2, type: 2}
+  exitTile: {fileID: 180626, guid: f72df0d1d9b335f4c8629888a7ca37e6, type: 2}
+  torch: {fileID: 126440, guid: d4861622bd2cf6949b361e76e619a1e5, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: frontierTile
+      value: 
+      objectReference: {fileID: 147878, guid: 71de1a9e908a9a84f986852ebf8a5f58, type: 2}
+    - target: {fileID: 0}
+      propertyPath: roomsNumber
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rows
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: columns
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: monsterNumber
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: roomSize.minimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: roomSize.maximum
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: torchNumber
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: distanceBetweenTorchs
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: torch
+      value: 
+      objectReference: {fileID: 126440, guid: d4861622bd2cf6949b361e76e619a1e5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: corridorMaxLength
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 166528}
+  m_IsPrefabParent: 1
