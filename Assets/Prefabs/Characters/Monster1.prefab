@@ -98,7 +98,7 @@ MonoBehaviour:
   heroAndBlockingLayer:
     serializedVersion: 2
     m_Bits: 1280
-  primarySpell: {fileID: 110606, guid: da10079c46e17d941833673863317e1d, type: 2}
+  primarySpell: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
 --- !u!114 &11423614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,7 +276,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: primarySpell
       value: 
-      objectReference: {fileID: 110606, guid: da10079c46e17d941833673863317e1d, type: 2}
+      objectReference: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
     - target: {fileID: 0}
       propertyPath: deathAnimation
       value: 

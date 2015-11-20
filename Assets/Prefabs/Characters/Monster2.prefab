@@ -13,9 +13,9 @@ GameObject:
   - 114: {fileID: 11461294}
   - 114: {fileID: 11434668}
   - 114: {fileID: 11447116}
-  - 95: {fileID: 9562998}
   - 58: {fileID: 5832332}
   - 50: {fileID: 5066020}
+  - 95: {fileID: 9583610}
   m_Layer: 9
   m_Name: Monster2
   m_TagString: Enemy
@@ -64,7 +64,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .449999988
---- !u!95 &9562998
+--- !u!95 &9583610
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -73,7 +73,7 @@ Animator:
   m_GameObject: {fileID: 149020}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 24bc4e65d4d01b7479c7128c26dd7861, type: 2}
+  m_Controller: {fileID: 22100000, guid: da86a0bc4cbfa904a958c81f2bd982ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

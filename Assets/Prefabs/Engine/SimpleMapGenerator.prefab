@@ -72,6 +72,7 @@ MonoBehaviour:
   frontierTile: {fileID: 147878, guid: 71de1a9e908a9a84f986852ebf8a5f58, type: 2}
   monsters:
   - {fileID: 132528, guid: 1531406b618c2ec479185cfe0db938c2, type: 2}
+  - {fileID: 149020, guid: 7ae5464ff731cbf428aa3415ade0026a, type: 2}
   exitTile: {fileID: 180626, guid: f72df0d1d9b335f4c8629888a7ca37e6, type: 2}
   torch: {fileID: 126440, guid: d4861622bd2cf6949b361e76e619a1e5, type: 2}
 --- !u!1001 &100100000
@@ -83,7 +84,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: monsters.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: frontierTile
@@ -129,6 +130,10 @@ Prefab:
       propertyPath: corridorMaxLength
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.data[1]
+      value: 
+      objectReference: {fileID: 149020, guid: 7ae5464ff731cbf428aa3415ade0026a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166528}
