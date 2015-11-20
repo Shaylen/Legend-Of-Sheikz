@@ -34,13 +34,15 @@ public class PlayerController : MovingCharacter
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Vector2 direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
-            castSpell(primarySpell, direction);
+            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.z = 0;    // fix because camera see point at z = -5
+            castSpell(primarySpell, transform.position, target);
         }
         else if (Input.GetButtonDown("Fire2"))
         {
-            Vector2 direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
-            castSpell(secondarySpell, direction);
+            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.z = 0;    // fix because camera see point at z = -5
+            castSpell(secondarySpell, transform.position, target);
         }
         else if (Input.GetButtonDown("Jump"))
         {

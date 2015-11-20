@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GreenFireBall : SpellController
+public class GreenFireBall : MovingSpell
 {
     public float rotationSpeed;
     public float duration;
@@ -9,6 +9,7 @@ public class GreenFireBall : SpellController
 
     void Start()
     {
+        if (duration > 0)
         StartCoroutine(destroyAfterSeconds(duration));
     }
 

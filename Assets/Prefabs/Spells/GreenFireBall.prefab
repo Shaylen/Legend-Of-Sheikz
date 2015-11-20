@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &165868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432708}
+  - 108: {fileID: 10839172}
+  m_Layer: 0
+  m_Name: GreenLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &188102
 GameObject:
   m_ObjectHideFlags: 0
@@ -19,6 +35,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &432708
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 483302}
+  m_RootOrder: 0
 --- !u!4 &483302
 Transform:
   m_ObjectHideFlags: 1
@@ -28,7 +56,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 48.4101028, y: 50.2787018, z: 0}
   m_LocalScale: {x: .800000012, y: .800000012, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 432708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5069616
@@ -60,6 +89,38 @@ CircleCollider2D:
   m_Offset: {x: 0, y: .0399999991}
   serializedVersion: 2
   m_Radius: .476165771
+--- !u!108 &10839172
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165868}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: .528769374, g: .867647052, b: .331747413, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11409806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   damage: 10
-  light: {fileID: 121582, guid: e9872e06d82632449a0c4f5264b08dff, type: 2}
+  light: {fileID: 0}
   rotationSpeed: -5
   duration: 3
   fadeTime: .100000001
@@ -141,7 +202,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: light
       value: 
-      objectReference: {fileID: 121582, guid: e9872e06d82632449a0c4f5264b08dff, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rotationSpeed
       value: -5

@@ -10,8 +10,24 @@ GameObject:
   - 4: {fileID: 400378}
   - 198: {fileID: 19810366}
   - 199: {fileID: 19929278}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Circle_ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &165180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440966}
+  - 108: {fileID: 10851974}
+  m_Layer: 13
+  m_Name: GreenLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +43,7 @@ GameObject:
   - 4: {fileID: 434096}
   - 198: {fileID: 19884060}
   - 199: {fileID: 19926002}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Circle_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +60,7 @@ GameObject:
   - 4: {fileID: 453588}
   - 198: {fileID: 19842738}
   - 199: {fileID: 19967338}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Stamp_pfireball01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +77,7 @@ GameObject:
   - 4: {fileID: 494112}
   - 198: {fileID: 19822400}
   - 199: {fileID: 19939706}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Stamp_pfireball01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +94,7 @@ GameObject:
   - 4: {fileID: 454866}
   - 198: {fileID: 19858938}
   - 199: {fileID: 19900736}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Stamp_pfireball01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +111,7 @@ GameObject:
   - 4: {fileID: 430792}
   - 198: {fileID: 19879562}
   - 199: {fileID: 19918038}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Stuff_smoke_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,11 +130,10 @@ GameObject:
   - 199: {fileID: 19984726}
   - 82: {fileID: 8284988}
   - 82: {fileID: 8243874}
-  - 114: {fileID: 11417094}
   - 50: {fileID: 5038222}
   - 114: {fileID: 11466880}
   - 58: {fileID: 5813500}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GhostFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,6 +176,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 496988}
   m_RootOrder: 0
+--- !u!4 &440966
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496988}
+  m_RootOrder: 6
 --- !u!4 &453588
 Transform:
   m_ObjectHideFlags: 1
@@ -213,6 +240,7 @@ Transform:
   - {fileID: 430792}
   - {fileID: 454866}
   - {fileID: 453588}
+  - {fileID: 440966}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5038222
@@ -384,20 +412,38 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11417094
-MonoBehaviour:
+--- !u!108 &10851974
+Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190040}
+  m_GameObject: {fileID: 165180}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f073d62228dbc440b1f676316a42c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  damage: 10
-  light: {fileID: 0}
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: .528769374, g: .867647052, b: .331747413, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11466880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -412,6 +458,7 @@ MonoBehaviour:
   speed: 5
   damage: 10
   light: {fileID: 0}
+  lifeTime: 5
 --- !u!198 &19810366
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -7648,6 +7695,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Offset.y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lifeTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

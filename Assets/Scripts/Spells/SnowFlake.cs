@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SnowFlake : SpellController
+public class SnowFlake : MovingSpell
 {
     public float rotationSpeed;
     public float duration;
 
     void Start()
     {
-        StartCoroutine(destroyAfterSeconds(duration));
+        if (duration > 0)
+            StartCoroutine(destroyAfterSeconds(duration));
     }
 
     void FixedUpdate()

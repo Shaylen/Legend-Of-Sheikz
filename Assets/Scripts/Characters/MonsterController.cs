@@ -94,13 +94,12 @@ public class MonsterController : MovingCharacter
         }
         if (!onCoolDown && hasClearTarget(hero))
         {
-            Vector2 direction = hero.transform.position - transform.position;
-            castSpell(primarySpell, direction);
+            Vector3 spellTarget = hero.transform.position;
+            castSpell(primarySpell, transform.position, spellTarget);
             StartCoroutine(startCoolDown());
         }
         goal = hero.transform.position;
         target = hero.transform.position;
-
     }
 
     private IEnumerator startCoolDown()

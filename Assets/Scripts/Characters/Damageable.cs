@@ -36,7 +36,7 @@ public class Damageable : MonoBehaviour
 
     public void doDamage(GameObject emitter, int damage)
     {
-        if (!isDamageable(emitter))  // Friendly fire?
+        if (!isDamageable(emitter))  // Am I damaging myself?
             return;
 
         if (isInvincible)               // Invincible?

@@ -5,7 +5,6 @@ using System;
 public abstract class MovingCharacter : MonoBehaviour
 {
     public float speed;
-    
 
     protected Rigidbody2D rb;
     protected Animator anim;
@@ -19,8 +18,8 @@ public abstract class MovingCharacter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();    }
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     protected void updateAnimations(Vector2 movement)
     {
@@ -37,10 +36,10 @@ public abstract class MovingCharacter : MonoBehaviour
             anim.SetBool("Moving", false);
     }
 
-    protected void castSpell(GameObject spell, Vector2 direction)
+    protected void castSpell(GameObject spell, Vector3 position, Vector3 target)
     {
-        GameObject newSpell = Instantiate(spell, transform.position, Quaternion.identity) as GameObject;
-        newSpell.GetComponent<SpellController>().initialize(gameObject, direction);
+        GameObject newSpell = Instantiate(spell) as GameObject;
+        newSpell.GetComponent<SpellController>().initialize(gameObject, position, target);
     }
 
     protected void castSpell(GameObject spell)

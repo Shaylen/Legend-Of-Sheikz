@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FireBall : SpellController
+public class FireBall : MovingSpell
 {
     public float knockbackIntensity;
     public float knockbackDuration;
     public float fadeTime;
+
+    void Start()
+    {
+        
+    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {

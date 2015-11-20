@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   heroLight: {fileID: 197130, guid: 7d7de3d0709066e419f0e487753ae850, type: 2}
-  primarySpell: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
+  primarySpell: {fileID: 183900, guid: ff2e9be61e541d04fa0ca73689b1dae9, type: 2}
   secondarySpell: {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
   defensiveSpell: {fileID: 100004, guid: d9751637d4fc2de40a234b45e10cb88d, type: 2}
 --- !u!114 &11494004
@@ -216,7 +216,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: primarySpell
       value: 
-      objectReference: {fileID: 190040, guid: 633e2b6b85fbc64479c9504d579b9898, type: 2}
+      objectReference: {fileID: 183900, guid: ff2e9be61e541d04fa0ca73689b1dae9, type: 2}
     - target: {fileID: 0}
       propertyPath: flashingMaterial
       value: 
