@@ -165,7 +165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   speed: 5
-  fadeTime: 1
+  fadeTime: .100000001
+  oscillatingAmplitude: 20
+  oscillatingFrequency: 5
 --- !u!198 &19831542
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -2301,11 +2303,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fadeTime
-      value: 1
+      value: .100000001
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_GravityScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: oscillatingAmplitude
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: oscillatingFrequency
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
