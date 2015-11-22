@@ -13,7 +13,7 @@ GameObject:
   - 82: {fileID: 8200388}
   - 114: {fileID: 11444310}
   - 58: {fileID: 5843620}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FireVortex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 4: {fileID: 450082}
   - 198: {fileID: 19888816}
   - 199: {fileID: 19977788}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 4: {fileID: 446314}
   - 198: {fileID: 19896958}
   - 199: {fileID: 19955868}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,9 +186,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efdba1b18e28d54429bcb9b2d8715156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
+  emitter: {fileID: 0}
   damage: 5
   duration: 3
-  damageDelay: 1
+  damageDelay: .5
 --- !u!198 &19876970
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3310,7 +3312,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1773927929
+  m_SortingLayerID: 1819099531
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: .5
@@ -3346,7 +3348,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1773927929
+  m_SortingLayerID: 1819099531
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: .5
@@ -3382,7 +3384,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1773927929
+  m_SortingLayerID: 1819099531
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: .5
@@ -3417,7 +3419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
-      value: 1773927929
+      value: 1819099531
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
@@ -3461,7 +3463,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: damageDelay
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

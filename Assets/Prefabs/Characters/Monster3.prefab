@@ -48,7 +48,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &5805792
@@ -110,9 +110,15 @@ MonoBehaviour:
   speed: 1
   goalDistance: 5
   visionDistance: 7
-  heroAndBlockingLayer:
+  preferedDistance:
+    minimum: 1
+    maximum: 5
+  visionLayer:
     serializedVersion: 2
     m_Bits: 1280
+  aimingLayer:
+    serializedVersion: 2
+    m_Bits: 1792
   primarySpell: {fileID: 161200, guid: 0ddff5fadebc747c598becc1c279e398, type: 2}
 --- !u!114 &11458930
 MonoBehaviour:
@@ -180,6 +186,34 @@ Prefab:
       propertyPath: primarySpell
       value: 
       objectReference: {fileID: 161200, guid: 0ddff5fadebc747c598becc1c279e398, type: 2}
+    - target: {fileID: 0}
+      propertyPath: visionLayer.m_Bits
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aimingLayer.m_Bits
+      value: 1792
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: preferedDistance.minimum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: preferedDistance.maximum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190100}

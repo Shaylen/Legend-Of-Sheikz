@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 	public GameObject heroPrefab;
     public GameObject floatingText;
 
+    [HideInInspector]
+    public Image[] coolDownImages;
 	[HideInInspector]
 	public int levelNumber;
 	[HideInInspector]
@@ -55,7 +57,34 @@ public class GameManager : MonoBehaviour
         }
         screenMask.SetActive(false);
         centerText.SetActive(false);
-	}
+
+        coolDownImages = new Image[4];
+        coolDownImages[2] = GameObject.Find("SpellIconDefensive").transform.Find("CooldownFill").GetComponent<Image>();
+        if (!coolDownImages[2])
+        {
+            Debug.LogError("Defensive Spell cooldown image not found!");
+            Debug.Break();
+        }
+        coolDownImages[0] = GameObject.Find("SpellIconPrimarySpell").transform.Find("CooldownFill").GetComponent<Image>();
+        if (!coolDownImages[0])
+        {
+            Debug.LogError("Primary Spell cooldown image not found!");
+            Debug.Break();
+        }
+        coolDownImages[1] = GameObject.Find("SpellIconSecondarySpell").transform.Find("CooldownFill").GetComponent<Image>();
+        if (!coolDownImages[1])
+        {
+            Debug.LogError("Secondary Spell cooldown image not found!");
+            Debug.Break();
+        }
+        coolDownImages[3] = GameObject.Find("SpellIconUltimate").transform.Find("CooldownFill").GetComponent<Image>();
+        if (!coolDownImages[3])
+        {
+            Debug.LogError("Secondary Spell cooldown image not found!");
+            Debug.Break();
+        }
+
+    }
 	
 	public void createHero()
 	{

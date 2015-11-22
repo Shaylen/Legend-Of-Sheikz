@@ -16,15 +16,21 @@ public class FireVortex : StaticSpell
         StartCoroutine(doDamageAfterSeconds(damageDelay));
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void Update()
     {
         if (!isDoingDamage)
             return;
 
-        Damageable dmg = other.GetComponent<Damageable>();
-        if (dmg)
+        foreach (GameObject obj in affectedObjects)
         {
-            dmg.doDamage(emitter, damage);
+            if (!obj)
+                continue;
+
+            Damageable dmg = obj.GetComponent<Damageable>();
+            if (dmg)
+            {
+                dmg.doDamage(emitter, damage);
+            }
         }
     }
 

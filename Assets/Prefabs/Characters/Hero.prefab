@@ -46,7 +46,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &5810454
@@ -92,9 +92,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   heroLight: {fileID: 197130, guid: 7d7de3d0709066e419f0e487753ae850, type: 2}
-  primarySpell: {fileID: 161200, guid: 0ddff5fadebc747c598becc1c279e398, type: 2}
-  secondarySpell: {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
-  defensiveSpell: {fileID: 182692, guid: a6be7aec3410a416b896852f95fbc8cf, type: 2}
+  spellList:
+  - {fileID: 183900, guid: ff2e9be61e541d04fa0ca73689b1dae9, type: 2}
+  - {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
+  - {fileID: 182692, guid: a6be7aec3410a416b896852f95fbc8cf, type: 2}
+  - {fileID: 147840, guid: 1fdcf6b6729bdd4469b624e8d7958953, type: 2}
 --- !u!114 &11494004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,6 +152,10 @@ Prefab:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: spellList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Radius
       value: .449999988
       objectReference: {fileID: 0}
@@ -196,7 +202,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: secondarySpell
       value: 
-      objectReference: {fileID: 197632, guid: c0edf832a5aabda4ab02e651ecc8ae49, type: 2}
+      objectReference: {fileID: 110606, guid: da10079c46e17d941833673863317e1d, type: 2}
     - target: {fileID: 0}
       propertyPath: deathAnimation
       value: 
@@ -216,11 +222,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: primarySpell
       value: 
-      objectReference: {fileID: 161200, guid: 0ddff5fadebc747c598becc1c279e398, type: 2}
+      objectReference: {fileID: 147840, guid: 1fdcf6b6729bdd4469b624e8d7958953, type: 2}
     - target: {fileID: 0}
       propertyPath: flashingMaterial
       value: 
       objectReference: {fileID: 2100000, guid: eb344bc0518861c4191ec8540eeaf55a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191952}

@@ -28,7 +28,7 @@ public class Damageable : MonoBehaviour
         floatingText = GameManager.instance.floatingText;
         originalMaterial = spriteRenderer.material;
     }
-
+    
     public int getHP()
     {
         return HP;

@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
+using System.Collections.Generic;
 
 public class PlayerController : MovingCharacter
 {
     public GameObject heroLight;
-    public GameObject primarySpell;
-    public GameObject secondarySpell;
-    public GameObject defensiveSpell;
+    public GameObject[] spellList;
+
+    private bool[] isOnCoolDown;
 
     new void Start()
     {
@@ -15,6 +17,9 @@ public class PlayerController : MovingCharacter
         GameObject newLight = Instantiate(heroLight);
         newLight.transform.SetParent(transform);
         newLight.transform.localPosition = new Vector3(0, 0, -1);
+        isOnCoolDown = new bool[spellList.Length];
+        for (int i = 0; i < isOnCoolDown.Length; i++)
+            isOnCoolDown[i] = false;
     }
 
     
@@ -22,32 +27,60 @@ public class PlayerController : MovingCharacter
     {
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
-        Vector2 movement = new Vector2(inputX, inputY).normalized * speed;
+        movement = new Vector2(inputX, inputY).normalized * speed;
+        if (movement != Vector2.zero)
+            direction = movement;
 
-        updateAnimations(movement);
+        updateAnimations();
         rb.velocity = movement;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        List<int> buttonPressed = new List<int>();
+        Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        target.z = 0;    // fix because camera see point at z = -5
+
+        if (Input.GetButton("Fire1"))
         {
-            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = 0;    // fix because camera see point at z = -5
-            castSpell(primarySpell, transform.position, target);
+            buttonPressed.Add(0);
         }
-        else if (Input.GetButtonDown("Fire2"))
+        else if (Input.GetButton("Fire2"))
         {
-            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = 0;    // fix because camera see point at z = -5
-            castSpell(secondarySpell, transform.position, target);
+            buttonPressed.Add(1);
         }
-        else if (Input.GetButtonDown("Jump"))
+        else if (Input.GetButton("Jump"))
         {
-            castSpell(defensiveSpell);
+            buttonPressed.Add(2);
         }
+        else if (Input.GetButton("Fire3"))
+        {
+            buttonPressed.Add(3);
+        }
+
+        foreach (int button in buttonPressed)
+        {
+            if (!isOnCoolDown[button])
+            {
+                StartCoroutine(startCooldown(button));
+                castSpell(spellList[button], transform.position, target);
+            }
+        }
+    }
+
+    private IEnumerator startCooldown(int spellIndex)
+    {
+        isOnCoolDown[spellIndex] = true;
+        float startingTime = Time.time;
+        float cooldown = spellList[spellIndex].GetComponent<SpellController>().cooldown;
+        while (Time.time - startingTime < cooldown)
+        {
+            GameManager.instance.coolDownImages[spellIndex].fillAmount = Mathf.Lerp(1, 0, (Time.time - startingTime) / cooldown);
+            yield return null;
+        }
+        GameManager.instance.coolDownImages[spellIndex].fillAmount = 0;
+        isOnCoolDown[spellIndex] = false;
     }
 
     public override void receivesDamage()

@@ -9,12 +9,10 @@ public class GhostFire : MovingSpell
 	// Use this for initialization
 	void Start ()
     {
-
         float angle = Vector3.Angle(Vector3.down, direction);
         if (direction.x <= 0)
             angle *= -1;
         transform.Rotate(new Vector3(0, 0, angle));
-        transform.position -= (Vector3)direction;
         StartCoroutine(destroyAfterSeconds(lifeTime));
         offsetMagnitude = circleCollider.offset.magnitude;
     }

@@ -4,6 +4,7 @@ using System.Collections;
 public abstract class MovingSpell : SpellController
 {
     public float speed;
+    public int damage;
 
     protected Vector2 direction;
     protected Vector3 initialPosition;

@@ -8,10 +8,11 @@ public class MonsterController : MovingCharacter
 {
     public float goalDistance;
     public float visionDistance;
-    public LayerMask heroAndBlockingLayer;
+    public Count preferedDistance;
+    public LayerMask visionLayer;
+    public LayerMask aimingLayer;
     public GameObject primarySpell;
 
-    private Vector2 movement;
     private Vector3 target;     // short-term target
     private Vector3 goal;       // long-term target
     private Stack<Vector2i> path;
@@ -19,6 +20,8 @@ public class MonsterController : MovingCharacter
     private EnemyState state;
     private GameObject hero;    // Reference to the hero
     private bool onCoolDown = false;
+    private bool hasStrafeValueExpired = true;
+    private float strafeValue = 1f;
 
     private enum EnemyState { DoNothing, Wander, Chase };
 
@@ -41,8 +44,7 @@ public class MonsterController : MovingCharacter
     void FixedUpdate()
     {
         actAccordingToState();
-        updateMovementToReachTarget();
-        updateAnimations(movement);
+        updateAnimations();
     }
 
     void Update()
@@ -64,12 +66,6 @@ public class MonsterController : MovingCharacter
         }
 
     }
-    void updateMovementToReachTarget()
-    {
-        movement = (target - transform.position).normalized * speed;
-        rb.velocity = movement;
-        rb.MovePosition(Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime));
-    }
 
     void doWander()
     {
@@ -82,6 +78,9 @@ public class MonsterController : MovingCharacter
             setNewGoal();
         if (hasReached(target))
             setNewTarget();
+
+        updateMovementToReachTarget();
+        moveToTarget();
     }
 
     void doChase()
@@ -92,20 +91,71 @@ public class MonsterController : MovingCharacter
             computePathToGoal();
             return;
         }
-        if (!onCoolDown && hasClearTarget(hero))
+
+        Vector3 lineToHero = hero.transform.position - transform.position;
+        float distanceToHero = lineToHero.magnitude;
+
+        if (!onCoolDown && hasClearTarget(hero, distanceToHero))
         {
             Vector3 spellTarget = hero.transform.position;
             castSpell(primarySpell, transform.position, spellTarget);
-            StartCoroutine(startCoolDown());
+            StartCoroutine(startCoolDown(primarySpell.GetComponent<SpellController>().cooldown));
         }
+
+        doStrafe(distanceToHero, lineToHero);
         goal = hero.transform.position;
-        target = hero.transform.position;
+
+        moveToTarget();
     }
 
-    private IEnumerator startCoolDown()
+    private void doStrafe(float distanceToHero, Vector3 lineToHero) // Strafe according to the distance to the hero
+    {
+        Vector3 directionToHero = lineToHero.normalized;
+        if (distanceToHero < preferedDistance.minimum)  // Too close to hero, go back
+        {
+            target = transform.position + directionToHero * -1;
+        }
+        else if (distanceToHero > preferedDistance.minimum && distanceToHero < preferedDistance.maximum)    // In the prefered distance, do random strafe
+        {
+            updateRandomTemporaryStrafeValue();
+            target = transform.position + (Vector3.Cross(directionToHero, Vector3.back)) * strafeValue;
+        }
+        else
+            target = hero.transform.position;
+
+        movement = (target - transform.position).normalized * speed;
+        direction = lineToHero;   // Face the hero
+    }
+
+    private void updateRandomTemporaryStrafeValue()
+    {
+        if (hasStrafeValueExpired)
+            StartCoroutine(resetStrafeValue(Random.Range(1f,3f)));
+    }
+
+    private IEnumerator resetStrafeValue(float duration)
+    {
+        strafeValue = Random.Range(0, 2) * 2 - 1; // Random value between -1 and +1
+        hasStrafeValueExpired = false;
+        yield return new WaitForSeconds(duration);
+        hasStrafeValueExpired = true;
+    }
+
+    void updateMovementToReachTarget()
+    {
+        movement = (target - transform.position).normalized * speed;
+        direction = movement;
+    }
+
+    void moveToTarget()
+    {
+        rb.MovePosition(Vector3.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime));
+    }
+
+    protected IEnumerator startCoolDown(float cooldownTime)
     {
         onCoolDown = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(cooldownTime);
         onCoolDown = false;
     }
 
@@ -124,20 +174,20 @@ public class MonsterController : MovingCharacter
             return false;
 
         circleCollider.enabled = false;
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, hero.transform.position, heroAndBlockingLayer);
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, hero.transform.position, visionLayer);
         circleCollider.enabled = true;
         if (hit.collider.gameObject == hero)
             return true;
         return false;
     }
 
-    bool hasClearTarget(GameObject hero)
+    bool hasClearTarget(GameObject hero, float distanceToHero)
     {
-        if ((transform.position - hero.transform.position).sqrMagnitude > (visionDistance * visionDistance))
+        if (distanceToHero > visionDistance)
             return false;
 
         circleCollider.enabled = false;
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, hero.transform.position);
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, hero.transform.position, aimingLayer);
         circleCollider.enabled = true;
         if (hit.collider.gameObject == hero)
             return true;

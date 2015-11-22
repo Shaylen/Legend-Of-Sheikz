@@ -15,11 +15,6 @@ public class AStarPathFinder : MonoBehaviour
 
 	public Stack<Vector2i> getPath(Vector2i start, Vector2i goal)
 	{
-		/*if (map.getTile(start.x, start.y).layer == LayerMask.NameToLayer("BlockingLayer") || map.getTile(goal.x, goal.y).layer == LayerMask.NameToLayer("BlockingLayer"))
-		{
-			Debug.Log("Start or destination are blocked");
-			return null;
-		}*/
 		HashSet<Vector2i> closedSet = new HashSet<Vector2i>();
 		HashSet<Vector2i> openSet = new HashSet<Vector2i>();
 		openSet.Add(start);

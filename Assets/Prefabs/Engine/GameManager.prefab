@@ -42,6 +42,11 @@ MonoBehaviour:
   mapGenerator: {fileID: 166528, guid: b4e558fa650b834479659978e21fae86, type: 2}
   heroPrefab: {fileID: 191952, guid: 897456c745e376f41b00bc6ede24e4f5, type: 2}
   floatingText: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+  cooldownDefensiveSpell: {fileID: 143800, guid: 4fbc59481c992574db4bafd7fb307faf,
+    type: 2}
+  cooldownPrimarySpell: {fileID: 160366, guid: 225c3fb189dc0634ab482719a7d4ffef, type: 2}
+  cooldownSecondarySpell: {fileID: 128866, guid: 8b9c68525d6a5124e8e2877b1c09ddd5,
+    type: 2}
   levelNumber: 0
   hero: {fileID: 0}
   map: {fileID: 0}
@@ -140,6 +145,18 @@ Prefab:
       propertyPath: floatingText
       value: 
       objectReference: {fileID: 146472, guid: a3999b8c8f783de4492975649ed7ce34, type: 2}
+    - target: {fileID: 0}
+      propertyPath: cooldownPrimarySpell
+      value: 
+      objectReference: {fileID: 160366, guid: 225c3fb189dc0634ab482719a7d4ffef, type: 2}
+    - target: {fileID: 0}
+      propertyPath: cooldownSecondarySpell
+      value: 
+      objectReference: {fileID: 128866, guid: 8b9c68525d6a5124e8e2877b1c09ddd5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: cooldownDefensiveSpell
+      value: 
+      objectReference: {fileID: 143800, guid: 4fbc59481c992574db4bafd7fb307faf, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119932}

@@ -3,14 +3,15 @@ using System.Collections;
 
 public abstract class SpellController : MonoBehaviour
 {
-	public int damage;
+    public float cooldown;
 
-	protected Animator anim;
+    protected Animator anim;
 	protected Rigidbody2D rb;
 	protected CircleCollider2D circleCollider;
-	protected GameObject emitter;   // Reference to the caster of the spell
+    [HideInInspector]
+	public GameObject emitter;   // Reference to the caster of the spell
 
-	protected void Awake()
+    protected void Awake()
 	{
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
@@ -34,13 +35,6 @@ public abstract class SpellController : MonoBehaviour
 		yield return new WaitForSeconds(seconds);
 		Destroy(gameObject);
 	}
-
-
-    public void initialize(GameObject emitter)
-    {
-        this.emitter = emitter;
-        transform.SetParent(emitter.transform);
-    }
 
     public abstract void initialize(GameObject emitter, Vector3 position, Vector3 target);
 }

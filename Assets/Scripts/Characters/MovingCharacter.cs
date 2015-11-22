@@ -6,6 +6,8 @@ public abstract class MovingCharacter : MonoBehaviour
 {
     public float speed;
 
+    protected Vector2 movement;     // Direction in which the character moves
+    protected Vector2 direction;    // Direction in which he is facing
     protected Rigidbody2D rb;
     protected Animator anim;
     protected CircleCollider2D circleCollider;
@@ -21,19 +23,18 @@ public abstract class MovingCharacter : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    protected void updateAnimations(Vector2 movement)
+    protected void updateAnimations()
     {
-        anim.SetBool("Moving", true);
-        anim.SetFloat("SpeedX", movement.x);
-        anim.SetFloat("SpeedY", movement.y);
-
-        if (movement != Vector2.zero)
+        if (anim)
         {
-            anim.SetFloat("LastSpeedX", movement.x);
-            anim.SetFloat("LastSpeedY", movement.y);
+            if (movement != Vector2.zero)
+                anim.SetBool("Moving", true);
+            else
+                anim.SetBool("Moving", false);
+
+            anim.SetFloat("DirectionX", direction.x);
+            anim.SetFloat("DirectionY", direction.y);
         }
-        else
-            anim.SetBool("Moving", false);
     }
 
     protected void castSpell(GameObject spell, Vector3 position, Vector3 target)
@@ -42,12 +43,6 @@ public abstract class MovingCharacter : MonoBehaviour
         newSpell.GetComponent<SpellController>().initialize(gameObject, position, target);
     }
 
-    protected void castSpell(GameObject spell)
-    {
-        GameObject newSpell = Instantiate(spell, transform.position, Quaternion.identity) as GameObject;
-        //newSpell.GetComponent<SpellController>().initialize(gameObject);
-        newSpell.transform.SetParent(gameObject.transform);
-    }
 
     public abstract void die();
 

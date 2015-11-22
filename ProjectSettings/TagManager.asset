@@ -25,8 +25,8 @@ TagManager:
   - Monster
   - Hero
   - Floor
-  - HeroSpells
-  - EnemiesSpells
+  - Spells
+  - 
   - Shield
   - 
   - 
@@ -51,6 +51,9 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 3193606359
+    locked: 0
+  - name: SpritesPreCharacter
+    uniqueID: 1819099531
     locked: 0
   - name: Monsters
     uniqueID: 3659415469

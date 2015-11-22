@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WaterShield : MonoBehaviour 
+public class WaterShield : DefensiveSpell 
 {
 	public float duration;
 
@@ -10,23 +10,20 @@ public class WaterShield : MonoBehaviour
 	{
 		StartCoroutine (destroyAfterSeconds (duration));
 	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
-	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Rigidbody2D otherRB = other.GetComponent<Rigidbody2D> ();
-		if (otherRB)
-			otherRB.velocity *= -1;
-	}
-
-	private IEnumerator destroyAfterSeconds(float seconds)
-	{
-		yield return new WaitForSeconds(seconds);
-		Destroy(gameObject);
+		SpellController otherSpell = other.GetComponent<SpellController>();
+		if (otherSpell) // It's a spell
+		{
+			Rigidbody2D otherRB = other.GetComponent<Rigidbody2D>();
+			if (otherRB)
+			{
+				otherRB.velocity *= -1;
+                other.transform.Rotate(0, 0, 180);
+				otherSpell.emitter = emitter;
+			}
+		}
+		
 	}
 }
