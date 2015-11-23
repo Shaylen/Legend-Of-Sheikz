@@ -107,7 +107,7 @@ MonoBehaviour:
   speed: 5
   heroLight: {fileID: 197130, guid: 7d7de3d0709066e419f0e487753ae850, type: 2}
   spellList:
-  - {fileID: 183900, guid: ff2e9be61e541d04fa0ca73689b1dae9, type: 2}
+  - {fileID: 189410, guid: 700b49026f41ece43856091854ebde1d, type: 2}
   - {fileID: 120904, guid: 7e1e4dff9b110f74485dabf2461a392e, type: 2}
   - {fileID: 182692, guid: a6be7aec3410a416b896852f95fbc8cf, type: 2}
   - {fileID: 147840, guid: 1fdcf6b6729bdd4469b624e8d7958953, type: 2}
@@ -257,6 +257,10 @@ Prefab:
       propertyPath: spellList.Array.data[1]
       value: 
       objectReference: {fileID: 120904, guid: 7e1e4dff9b110f74485dabf2461a392e, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spellList.Array.data[0]
+      value: 
+      objectReference: {fileID: 189410, guid: 700b49026f41ece43856091854ebde1d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191952}
