@@ -16,6 +16,7 @@ GameObject:
   - 58: {fileID: 5832332}
   - 50: {fileID: 5066020}
   - 95: {fileID: 9583610}
+  - 114: {fileID: 11458092}
   m_Layer: 9
   m_Name: Monster2
   m_TagString: Enemy
@@ -132,6 +133,18 @@ MonoBehaviour:
   - {fileID: 186694, guid: d5af80cf1c78b2046beeae12f6a699f8, type: 2}
   lootChance:
   - .200000003
+--- !u!114 &11458092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f60ca7e18d43e4ab14de05f130fdf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experience: 30
 --- !u!114 &11461294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,6 +227,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: experience
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

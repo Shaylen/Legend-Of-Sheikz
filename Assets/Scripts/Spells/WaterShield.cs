@@ -16,11 +16,13 @@ public class WaterShield : DefensiveSpell
 		SpellController otherSpell = other.GetComponent<SpellController>();
 		if (otherSpell) // It's a spell
 		{
+			if (otherSpell.emitter == emitter)  // Dont reflect our own spells!
+				return;
 			Rigidbody2D otherRB = other.GetComponent<Rigidbody2D>();
 			if (otherRB)
 			{
 				otherRB.velocity *= -1;
-                other.transform.Rotate(0, 0, 180);
+				other.transform.Rotate(0, 0, 180);
 				otherSpell.emitter = emitter;
 			}
 		}

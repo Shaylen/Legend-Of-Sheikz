@@ -17,6 +17,13 @@ public class Damageable : MonoBehaviour
     private GameObject healingAnimation;
     private SpriteRenderer spriteRenderer;
     private MovingCharacter movingChar;
+    private bool isDead = false;
+
+    internal float getXPRatio()
+    {
+        throw new NotImplementedException();
+    }
+
     private int healEffects = 0;
     private Material originalMaterial;
 
@@ -36,6 +43,9 @@ public class Damageable : MonoBehaviour
 
     public void doDamage(GameObject emitter, int damage)
     {
+        if (isDead)
+            return;
+
         if (!isDamageable(emitter))  // Am I damaging myself?
             return;
 
@@ -43,7 +53,7 @@ public class Damageable : MonoBehaviour
             return;
 
         GameObject dmgText = Instantiate(floatingText) as GameObject;
-        dmgText.GetComponent<FloatingText>().initialize(gameObject, damage);
+        dmgText.GetComponent<FloatingText>().initialize(gameObject, damage.ToString());
 
         if (movingChar)
             movingChar.receivesDamage();
@@ -51,16 +61,27 @@ public class Damageable : MonoBehaviour
         HP -= damage;
         if (HP <= 0)
         {
-            if (movingChar)
-                movingChar.die();
-            Instantiate(deathAnimation, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            Debug.Log(gameObject.name + " is dead.");
+            ExperienceHolder xpHolder = GetComponent<ExperienceHolder>();
+            if (xpHolder) // If I have experience, give it
+                xpHolder.die(emitter);
+
+            die();
             return;
         }
 
         StartCoroutine(makeInvincible(invincibilityTime)); // Make invincible
     }
-    
+
+    private void die()
+    {
+        if (movingChar)
+            movingChar.die();
+        Instantiate(deathAnimation, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+        isDead = true;
+    }
+
     /// <summary>
     /// Heal for a certain amount, and create a green floating text
     /// </summary>
@@ -72,7 +93,7 @@ public class Damageable : MonoBehaviour
             HP = maxHP;
 
         GameObject healText = Instantiate(floatingText) as GameObject;
-        healText.GetComponent<FloatingText>().initialize(gameObject, life);
+        healText.GetComponent<FloatingText>().initialize(gameObject, life.ToString());
         healText.GetComponent<FloatingText>().setColor(Color.green);
     }
 

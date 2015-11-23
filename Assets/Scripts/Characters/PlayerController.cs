@@ -46,15 +46,15 @@ public class PlayerController : MovingCharacter
         {
             buttonPressed.Add(0);
         }
-        else if (Input.GetButton("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
             buttonPressed.Add(1);
         }
-        else if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump"))
         {
             buttonPressed.Add(2);
         }
-        else if (Input.GetButton("Fire3"))
+        if (Input.GetButton("Fire3"))
         {
             buttonPressed.Add(3);
         }

@@ -150,13 +150,4 @@ QualitySettings:
     maximumLODLevel: 0
     particleRaycastBudget: 4096
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality:
-    Android: 1
-    Samsung TV: 1
-    Standalone: 1
-    Tizen: 1
-    WP8: 1
-    Web: 1
-    WebGL: 1
-    Windows Store Apps: 1
-    iPhone: 1
+  m_PerPlatformDefaultQuality: {}

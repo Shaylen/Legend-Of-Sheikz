@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SnowFlake : MovingSpell
+public class ElectricBall2 : MovingSpell
 {
-    public float rotationSpeed;
     public float duration;
 
     void Start()
@@ -14,11 +13,6 @@ public class SnowFlake : MovingSpell
         Physics2D.IgnoreCollision(circleCollider, emitter.GetComponent<CircleCollider2D>());    // Ignore collision with emitter
     }
 
-    void FixedUpdate()
-    {
-        transform.Rotate(0, 0, rotationSpeed);
-    }
-    
     void OnTriggerEnter2D(Collider2D other)
     {
         Damageable dmg = other.gameObject.GetComponent<Damageable>();

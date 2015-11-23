@@ -14,6 +14,8 @@ public class FloatingText : MonoBehaviour
     private RectTransform rectTransform;
     private Vector3 speedOffset;
     private GameObject parent;
+    private Vector3 parentPosition;
+    private float parentRadius;
     private float randomHorizontalOffset;
 
     void Awake()
@@ -29,25 +31,24 @@ public class FloatingText : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (!parent)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        if (parent)
+            parentPosition = parent.transform.position;
 
         speedOffset += Vector3.up * speed;
         rectTransform.position = Camera.main.WorldToScreenPoint
-            (parent.transform.position 
-            + Vector3.up * parent.GetComponent<CircleCollider2D>().radius
-            + Vector3.right * parent.GetComponent<CircleCollider2D>().radius * randomHorizontalOffset
+            (parentPosition
+            + Vector3.up * parentRadius
+            + Vector3.right * parentRadius * randomHorizontalOffset
             ) 
             + speedOffset;
 	}
 
-    public void initialize(GameObject parent, int damage)
+    public void initialize(GameObject parent, string t) // Initialization attached to a parent
     {
+        text.text = t;
         this.parent = parent;
-        text.text = damage.ToString();
+        parentPosition = parent.transform.position;
+        parentRadius = parent.GetComponent<CircleCollider2D>().radius;
     }
 
     IEnumerator fadeAfterSeconds(float duration)
