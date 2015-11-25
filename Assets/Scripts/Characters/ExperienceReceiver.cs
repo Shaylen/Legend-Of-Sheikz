@@ -24,6 +24,7 @@ public class ExperienceReceiver : MonoBehaviour
 	{
         Debug.Log("Received " + xp + " xp");
 		currentXP += xp;
+		totalXP += xp;
 		if (currentXP >= XPToNextLevel)
 		{
             levelUp();

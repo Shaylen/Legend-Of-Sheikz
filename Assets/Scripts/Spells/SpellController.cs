@@ -4,6 +4,7 @@ using System.Collections;
 public abstract class SpellController : MonoBehaviour
 {
     public float cooldown;
+	public Sprite icon;
 
     protected Animator anim;
 	protected Rigidbody2D rb;

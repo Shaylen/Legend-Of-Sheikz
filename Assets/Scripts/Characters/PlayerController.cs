@@ -9,8 +9,9 @@ public class PlayerController : MovingCharacter
     public GameObject heroLight;
     public GameObject[] spellList;
 
+	private Image[] spellIcons;
     private bool[] isOnCoolDown;
-
+    
     new void Start()
     {
         base.Start();
@@ -18,8 +19,10 @@ public class PlayerController : MovingCharacter
         newLight.transform.SetParent(transform);
         newLight.transform.localPosition = new Vector3(0, 0, -1);
         isOnCoolDown = new bool[spellList.Length];
+		spellIcons = new Image[spellList.Length];
         for (int i = 0; i < isOnCoolDown.Length; i++)
             isOnCoolDown[i] = false;
+		resetIcons();
     }
 
     
@@ -96,6 +99,22 @@ public class PlayerController : MovingCharacter
         yield return null;
         screenMask.SetActive(false);
     }
+
+	/// <summary>
+	/// Set the icons of the spells
+	/// </summary>
+	private void resetIcons()
+	{
+		spellIcons[0] = GameObject.Find ("SpellIconPrimarySpell").transform.Find ("SpellIcon").GetComponent<Image> ();
+		spellIcons[1] = GameObject.Find ("SpellIconSecondarySpell").transform.Find ("SpellIcon").GetComponent<Image> ();
+		spellIcons[2] = GameObject.Find ("SpellIconDefensive").transform.Find ("SpellIcon").GetComponent<Image> ();
+        spellIcons[3] = GameObject.Find ("SpellIconUltimate").transform.Find ("SpellIcon").GetComponent<Image> ();
+
+		for(int i=0; i < spellList.Length; i++)
+		{
+			spellIcons[i].sprite = spellList[i].GetComponent<SpellController>().icon;
+		}
+	}
 
     public override void die()
     {
