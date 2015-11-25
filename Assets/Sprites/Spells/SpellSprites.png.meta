@@ -1,9 +1,237 @@
 fileFormatVersion: 2
 guid: eba4031a659a7e24fa45ee590a9687cc
-timeCreated: 1446998143
+timeCreated: 1448454769
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SpellSprites_0
+    21300002: SpellSprites_1
+    21300004: SpellSprites_2
+    21300006: SpellSprites_3
+    21300008: SpellSprites_4
+    21300010: SpellSprites_5
+    21300012: SpellSprites_6
+    21300014: SpellSprites_7
+    21300016: SpellSprites_8
+    21300018: SpellSprites_9
+    21300020: SpellSprites_10
+    21300022: SpellSprites_11
+    21300024: SpellSprites_12
+    21300026: SpellSprites_13
+    21300028: SpellSprites_14
+    21300030: SpellSprites_15
+    21300032: SpellSprites_16
+    21300034: SpellSprites_17
+    21300036: SpellSprites_18
+    21300038: SpellSprites_19
+    21300040: SpellSprites_20
+    21300042: SpellSprites_21
+    21300044: SpellSprites_22
+    21300046: SpellSprites_23
+    21300048: SpellSprites_24
+    21300050: SpellSprites_25
+    21300052: SpellSprites_26
+    21300054: SpellSprites_27
+    21300056: SpellSprites_28
+    21300058: SpellSprites_29
+    21300060: SpellSprites_30
+    21300062: SpellSprites_31
+    21300064: SpellSprites_32
+    21300066: SpellSprites_33
+    21300068: SpellSprites_34
+    21300070: SpellSprites_35
+    21300072: SpellSprites_36
+    21300074: SpellSprites_37
+    21300076: SpellSprites_38
+    21300078: SpellSprites_39
+    21300080: SpellSprites_40
+    21300082: SpellSprites_41
+    21300084: SpellSprites_42
+    21300086: SpellSprites_43
+    21300088: SpellSprites_44
+    21300090: SpellSprites_45
+    21300092: SpellSprites_46
+    21300094: SpellSprites_47
+    21300096: SpellSprites_48
+    21300098: SpellSprites_49
+    21300100: SpellSprites_50
+    21300102: SpellSprites_51
+    21300104: SpellSprites_52
+    21300106: SpellSprites_53
+    21300108: SpellSprites_54
+    21300110: SpellSprites_55
+    21300112: SpellSprites_56
+    21300114: SpellSprites_57
+    21300116: SpellSprites_58
+    21300118: SpellSprites_59
+    21300120: SpellSprites_60
+    21300122: SpellSprites_61
+    21300124: SpellSprites_62
+    21300126: SpellSprites_63
+    21300128: SpellSprites_64
+    21300130: SpellSprites_65
+    21300132: SpellSprites_66
+    21300134: SpellSprites_67
+    21300136: SpellSprites_68
+    21300138: SpellSprites_69
+    21300140: SpellSprites_70
+    21300142: SpellSprites_71
+    21300144: SpellSprites_72
+    21300146: SpellSprites_73
+    21300148: SpellSprites_74
+    21300150: SpellSprites_75
+    21300152: SpellSprites_76
+    21300154: SpellSprites_77
+    21300156: SpellSprites_78
+    21300158: SpellSprites_79
+    21300160: SpellSprites_80
+    21300162: SpellSprites_81
+    21300164: SpellSprites_82
+    21300166: SpellSprites_83
+    21300168: SpellSprites_84
+    21300170: SpellSprites_85
+    21300172: SpellSprites_86
+    21300174: SpellSprites_87
+    21300176: SpellSprites_88
+    21300178: SpellSprites_89
+    21300180: SpellSprites_90
+    21300182: SpellSprites_91
+    21300184: SpellSprites_92
+    21300186: SpellSprites_93
+    21300188: SpellSprites_94
+    21300190: SpellSprites_95
+    21300192: SpellSprites_96
+    21300194: SpellSprites_97
+    21300196: SpellSprites_98
+    21300198: SpellSprites_99
+    21300200: SpellSprites_100
+    21300202: SpellSprites_101
+    21300204: SpellSprites_102
+    21300206: SpellSprites_103
+    21300208: SpellSprites_104
+    21300210: SpellSprites_105
+    21300212: SpellSprites_106
+    21300214: SpellSprites_107
+    21300216: SpellSprites_108
+    21300218: SpellSprites_109
+    21300220: SpellSprites_110
+    21300222: SpellSprites_111
+    21300224: SpellSprites_112
+    21300226: SpellSprites_113
+    21300228: SpellSprites_114
+    21300230: SpellSprites_115
+    21300232: SpellSprites_116
+    21300234: SpellSprites_117
+    21300236: SpellSprites_118
+    21300238: SpellSprites_119
+    21300240: SpellSprites_120
+    21300242: SpellSprites_121
+    21300244: SpellSprites_122
+    21300246: SpellSprites_123
+    21300248: SpellSprites_124
+    21300250: SpellSprites_125
+    21300252: SpellSprites_126
+    21300254: SpellSprites_127
+    21300256: SpellSprites_128
+    21300258: SpellSprites_129
+    21300260: SpellSprites_130
+    21300262: SpellSprites_131
+    21300264: SpellSprites_132
+    21300266: SpellSprites_133
+    21300268: SpellSprites_134
+    21300270: SpellSprites_135
+    21300272: SpellSprites_136
+    21300274: SpellSprites_137
+    21300276: SpellSprites_138
+    21300278: SpellSprites_139
+    21300280: SpellSprites_140
+    21300282: SpellSprites_141
+    21300284: SpellSprites_142
+    21300286: SpellSprites_143
+    21300288: SpellSprites_144
+    21300290: SpellSprites_145
+    21300292: SpellSprites_146
+    21300294: SpellSprites_147
+    21300296: SpellSprites_148
+    21300298: SpellSprites_149
+    21300300: SpellSprites_150
+    21300302: SpellSprites_151
+    21300304: SpellSprites_152
+    21300306: SpellSprites_153
+    21300308: SpellSprites_154
+    21300310: SpellSprites_155
+    21300312: SpellSprites_156
+    21300314: SpellSprites_157
+    21300316: SpellSprites_158
+    21300318: SpellSprites_159
+    21300320: SpellSprites_160
+    21300322: SpellSprites_161
+    21300324: SpellSprites_162
+    21300326: SpellSprites_163
+    21300328: SpellSprites_164
+    21300330: SpellSprites_165
+    21300332: SpellSprites_166
+    21300334: SpellSprites_167
+    21300336: SpellSprites_168
+    21300338: SpellSprites_169
+    21300340: SpellSprites_170
+    21300342: SpellSprites_171
+    21300344: SpellSprites_172
+    21300346: SpellSprites_173
+    21300348: SpellSprites_174
+    21300350: SpellSprites_175
+    21300352: SpellSprites_176
+    21300354: SpellSprites_177
+    21300356: SpellSprites_178
+    21300358: SpellSprites_179
+    21300360: SpellSprites_180
+    21300362: SpellSprites_181
+    21300364: SpellSprites_182
+    21300366: SpellSprites_183
+    21300368: SpellSprites_184
+    21300370: SpellSprites_185
+    21300372: SpellSprites_186
+    21300374: SpellSprites_187
+    21300376: SpellSprites_188
+    21300378: SpellSprites_189
+    21300380: SpellSprites_190
+    21300382: SpellSprites_191
+    21300384: SpellSprites_192
+    21300386: SpellSprites_193
+    21300388: SpellSprites_194
+    21300390: SpellSprites_195
+    21300392: SpellSprites_196
+    21300394: SpellSprites_197
+    21300396: SpellSprites_198
+    21300398: SpellSprites_199
+    21300400: SpellSprites_200
+    21300402: SpellSprites_201
+    21300404: SpellSprites_202
+    21300406: SpellSprites_203
+    21300408: SpellSprites_204
+    21300410: SpellSprites_205
+    21300412: SpellSprites_206
+    21300414: SpellSprites_207
+    21300416: SpellSprites_208
+    21300418: SpellSprites_209
+    21300420: SpellSprites_210
+    21300422: SpellSprites_211
+    21300424: SpellSprites_212
+    21300426: SpellSprites_213
+    21300428: SpellSprites_214
+    21300430: SpellSprites_215
+    21300432: SpellSprites_216
+    21300434: SpellSprites_217
+    21300436: SpellSprites_218
+    21300438: SpellSprites_219
+    21300440: SpellSprites_220
+    21300442: SpellSprites_221
+    21300444: SpellSprites_222
+    21300446: SpellSprites_223
+    21300448: SpellSprites_224
+    21300450: SpellSprites_225
+    21300452: SpellSprites_226
+    21300454: SpellSprites_227
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +258,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +266,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +277,2287 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SpellSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 1, y: 0, z: 0, w: 1}
+    - name: SpellSprites_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_10
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 470
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_15
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_21
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_23
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 444
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_30
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_31
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_33
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_34
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_35
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 418
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_37
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_38
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_39
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_40
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_42
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_43
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_45
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_46
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_47
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 392
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_49
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_50
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_51
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_52
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_53
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_54
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_55
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_56
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_57
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_59
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 366
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_61
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_62
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_63
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_64
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_65
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_66
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_67
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_68
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_69
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_70
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_71
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 340
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_73
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_74
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_75
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_76
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_77
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_78
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_79
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_80
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_81
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_82
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_83
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 314
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_85
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_86
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_87
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_88
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_89
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_90
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_91
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_92
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_93
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_94
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_95
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_97
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_98
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_99
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_100
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_102
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_103
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_105
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_106
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_107
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 262
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_109
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_110
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_111
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_112
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_113
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_114
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_115
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_116
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_117
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_118
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_119
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 236
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_121
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_122
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_123
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_124
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_125
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_126
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_127
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_128
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_129
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_130
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_131
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 210
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_133
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_134
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_135
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_136
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_137
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_138
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_139
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_140
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_141
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_142
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_143
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 184
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_145
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_146
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_147
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_148
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_149
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_150
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_151
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_152
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_153
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_154
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_155
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 158
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_157
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_158
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_159
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_160
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_161
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_162
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_163
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_164
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_165
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_166
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_167
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_169
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_170
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_171
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_172
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_173
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_174
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_175
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_176
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_177
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_178
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_179
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 106
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_181
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_182
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_183
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_184
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_185
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_186
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_187
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_188
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_189
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_190
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_191
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 80
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_193
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_194
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_195
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_196
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_197
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_198
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_199
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_200
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_201
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_202
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_203
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 54
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_204
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_205
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_206
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_207
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_208
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_209
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_210
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_211
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_212
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_213
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_214
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_215
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_217
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_218
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_219
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_220
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_221
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_222
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_223
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_224
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_225
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_226
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpellSprites_227
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

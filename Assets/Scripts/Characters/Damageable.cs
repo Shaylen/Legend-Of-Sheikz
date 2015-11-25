@@ -61,7 +61,6 @@ public class Damageable : MonoBehaviour
         HP -= damage;
         if (HP <= 0)
         {
-            Debug.Log(gameObject.name + " is dead.");
             ExperienceHolder xpHolder = GetComponent<ExperienceHolder>();
             if (xpHolder) // If I have experience, give it
                 xpHolder.die(emitter);
@@ -173,6 +172,15 @@ public class Damageable : MonoBehaviour
                 healingAnimation = null;
             }
         }
+    }
+
+
+    public void increaseMaxHP(int additionalHP)
+    {
+        maxHP += additionalHP;
+        HP += additionalHP;
+        if (HP >= maxHP)
+            HP = maxHP;
     }
 
 }

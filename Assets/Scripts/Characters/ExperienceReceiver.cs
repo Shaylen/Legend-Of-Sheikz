@@ -10,33 +10,35 @@ public class ExperienceReceiver : MonoBehaviour
 	private int currentXP;
 	private int totalXP;
 	private int XPToNextLevel;
-	
-	// Use this for initialization
-	void Start ()
+    private LevelUpManager levelUpManager;
+
+    // Use this for initialization
+    void Start ()
 	{
 		level = 1;  // Level start at 1
 		totalXP = 0;
 		currentXP = 0;
 		XPToNextLevel = XPForFirstLevel;
+        levelUpManager = GameObject.Find("LevelUpScreen").GetComponent<LevelUpManager>();
 	}
 
 	public void addXP(int xp)
 	{
-        Debug.Log("Received " + xp + " xp");
 		currentXP += xp;
 		totalXP += xp;
 		if (currentXP >= XPToNextLevel)
 		{
-            levelUp();
+			levelUp();
 		}
 	}
 
-    public void levelUp()
-    {
-        level++;
-        Debug.Log("Level up! now level: " + level);
-        XPToNextLevel = Mathf.RoundToInt(XPToNextLevel * levelMultiplier);
-        currentXP = 0;
+	public void levelUp()
+	{
+		level++;
+		Debug.Log("Level up! now level: " + level);
+		XPToNextLevel = Mathf.RoundToInt(XPToNextLevel * levelMultiplier);
+		currentXP = 0;
+        levelUpManager.levelUp();
     }
 
 	public float getXPRatio()
@@ -44,8 +46,8 @@ public class ExperienceReceiver : MonoBehaviour
 		return (float)currentXP / (float)XPToNextLevel;
 	}
 
-    public int getLevel()
-    {
-        return level;
-    }
+	public int getLevel()
+	{
+		return level;
+	}
 }

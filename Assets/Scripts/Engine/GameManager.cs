@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
 
 	public GameObject mapGenerator;
 	public GameObject heroPrefab;
-    public GameObject floatingText;
+	public GameObject floatingText;
 
-    [HideInInspector]
-    public Image[] coolDownImages;
+	[HideInInspector]
+	public Image[] coolDownImages;
 	[HideInInspector]
 	public int levelNumber;
 	[HideInInspector]
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
 	private MapGenerator mapGeneratorScript;
 	private LevelMap mapComponent;
+	private PlayerController heroController;
 
 	void Awake ()
 	{
@@ -44,52 +45,28 @@ public class GameManager : MonoBehaviour
 		mapGeneratorScript.generateMap(mapComponent);
 
 		screenMask = GameObject.Find("ScreenMask");
-        if (!screenMask)
-        {
-            Debug.LogError("Screen Mask not found!");
-            Debug.Break();
-        }
+		if (!screenMask)
+		{
+			Debug.LogError("Screen Mask not found!");
+			Debug.Break();
+		}
 		centerText = GameObject.Find("CenterText");
-        if (!centerText)
-        {
-            Debug.LogError("Center Text not found!");
-            Debug.Break();
-        }
-        screenMask.SetActive(false);
-        centerText.SetActive(false);
+		if (!centerText)
+		{
+			Debug.LogError("Center Text not found!");
+			Debug.Break();
+		}
+		screenMask.SetActive(false);
+		centerText.SetActive(false);
 
-        coolDownImages = new Image[4];
-        coolDownImages[2] = GameObject.Find("SpellIconDefensive").transform.Find("CooldownFill").GetComponent<Image>();
-        if (!coolDownImages[2])
-        {
-            Debug.LogError("Defensive Spell cooldown image not found!");
-            Debug.Break();
-        }
-        coolDownImages[0] = GameObject.Find("SpellIconPrimarySpell").transform.Find("CooldownFill").GetComponent<Image>();
-        if (!coolDownImages[0])
-        {
-            Debug.LogError("Primary Spell cooldown image not found!");
-            Debug.Break();
-        }
-        coolDownImages[1] = GameObject.Find("SpellIconSecondarySpell").transform.Find("CooldownFill").GetComponent<Image>();
-        if (!coolDownImages[1])
-        {
-            Debug.LogError("Secondary Spell cooldown image not found!");
-            Debug.Break();
-        }
-        coolDownImages[3] = GameObject.Find("SpellIconUltimate").transform.Find("CooldownFill").GetComponent<Image>();
-        if (!coolDownImages[3])
-        {
-            Debug.LogError("Secondary Spell cooldown image not found!");
-            Debug.Break();
-        }
-
-    }
+		linkIcons();
+	}
 	
 	public void createHero()
 	{
 		hero = Instantiate(heroPrefab);
 		hero.name = "Hero";
+		heroController = hero.GetComponent<PlayerController>();
 	}
 
 	public void createMap()
@@ -110,25 +87,67 @@ public class GameManager : MonoBehaviour
 		Color originalColor = screenImage.color;
 		screenImage.color = Color.black;
 
+		if (centerText)
+		{
 			centerText.SetActive(true);
 			centerText.GetComponent<Text>().color = Color.white;
 			centerText.GetComponent<Text>().text = "Loading...";
+		}
 
 		levelNumber++;
 		hero.SetActive(false);
 		mapComponent.destroyMap();
 
-		yield return null;      // This is necessary to let Unity destroy the objects at the next Update()
+		yield return null;      // This is necessary because Unity destroys the objects only at the next Update()
 
 		mapGeneratorScript.generateMap(mapComponent);
 		hero.SetActive(true);
 		screenImage.color = originalColor;
+		heroController.resetCooldowns();
+		resetCooldownImages();
 
 		if (centerText)
 		{
 			centerText.SetActive(false);
 		}
 
+	}
+
+	private void linkIcons()
+	{
+		coolDownImages = new Image[4];
+		coolDownImages[2] = GameObject.Find("SpellIconDefensive").transform.Find("CooldownFill").GetComponent<Image>();
+		if (!coolDownImages[2])
+		{
+			Debug.LogError("Defensive Spell cooldown image not found!");
+			Debug.Break();
+		}
+		coolDownImages[0] = GameObject.Find("SpellIconPrimarySpell").transform.Find("CooldownFill").GetComponent<Image>();
+		if (!coolDownImages[0])
+		{
+			Debug.LogError("Primary Spell cooldown image not found!");
+			Debug.Break();
+		}
+		coolDownImages[1] = GameObject.Find("SpellIconSecondarySpell").transform.Find("CooldownFill").GetComponent<Image>();
+		if (!coolDownImages[1])
+		{
+			Debug.LogError("Secondary Spell cooldown image not found!");
+			Debug.Break();
+		}
+		coolDownImages[3] = GameObject.Find("SpellIconUltimate").transform.Find("CooldownFill").GetComponent<Image>();
+		if (!coolDownImages[3])
+		{
+			Debug.LogError("Secondary Spell cooldown image not found!");
+			Debug.Break();
+		}
+	}
+
+	private void resetCooldownImages()
+	{
+		for (int i =0; i <coolDownImages.Length; i++)
+		{
+			coolDownImages[i].fillAmount = 0;
+		}
 	}
 
 	void OnApplicationQuit()

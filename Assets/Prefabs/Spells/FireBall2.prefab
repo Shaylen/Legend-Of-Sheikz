@@ -65,7 +65,7 @@ GameObject:
   - 114: {fileID: 11425516}
   m_Layer: 12
   m_Name: FireBall2
-  m_TagString: Untagged
+  m_TagString: Spell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d316207273a1c204882af4c4d41286bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: .200000003
+  cooldown: .5
+  icon: {fileID: 21300002, guid: 33cff30b3ba8e5a4db31d16838fe8348, type: 3}
   emitter: {fileID: 0}
   speed: 5
   damage: 10
@@ -3334,7 +3335,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: cooldown
-      value: .200000003
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
@@ -3375,6 +3376,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: prewarm
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300002, guid: 33cff30b3ba8e5a4db31d16838fe8348,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Spell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

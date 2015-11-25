@@ -3,8 +3,8 @@ using System.Collections;
 
 public abstract class MovingSpell : SpellController
 {
-    public float speed;
-    public int damage;
+    public float speed = 5;
+    public int damage = 10 ;
 
     protected Vector2 direction;
     protected Vector3 initialPosition;

@@ -33,7 +33,7 @@ GameObject:
   - 114: {fileID: 11454772}
   m_Layer: 14
   m_Name: WaterShield
-  m_TagString: shield
+  m_TagString: Spell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 5
+  icon: {fileID: 21300000, guid: c04efbb39aaed438f84edafdba3b7629, type: 3}
   emitter: {fileID: 0}
   duration: 2
 --- !u!198 &19809554
@@ -2383,6 +2384,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: cooldown
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: c04efbb39aaed438f84edafdba3b7629,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Spell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -49,6 +49,10 @@ public class LevelMap : MonoBehaviour
         GameObject[] spells = GameObject.FindGameObjectsWithTag("Spell");
         foreach (GameObject spell in spells)
             Destroy(spell);
+
+        GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
+        foreach (GameObject item in items)
+            Destroy(item);
     }
 
     public int getColumns()

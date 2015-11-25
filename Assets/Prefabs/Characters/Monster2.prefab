@@ -232,6 +232,10 @@ Prefab:
       propertyPath: experience
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: primarySpell
+      value: 
+      objectReference: {fileID: 110606, guid: da10079c46e17d941833673863317e1d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149020}

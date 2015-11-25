@@ -3,7 +3,7 @@ using System.Collections;
 
 public abstract class SpellController : MonoBehaviour
 {
-    public float cooldown;
+    public float cooldown = 0.2f;
 	public Sprite icon;
 
     protected Animator anim;

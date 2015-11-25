@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 1
+  icon: {fileID: 21300000, guid: 168fc0c7033815d468a75ad5d216b0f5, type: 3}
   emitter: {fileID: 0}
   speed: 3
   damage: 10
@@ -228,6 +229,11 @@ Prefab:
       propertyPath: cooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 168fc0c7033815d468a75ad5d216b0f5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188102}

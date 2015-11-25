@@ -135,7 +135,7 @@ GameObject:
   - 58: {fileID: 5813500}
   m_Layer: 12
   m_Name: GhostFire
-  m_TagString: Untagged
+  m_TagString: Spell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 1
+  icon: {fileID: 21300000, guid: 1872bfaf2a1854f5dbf1db8c4fac2f9f, type: 3}
   emitter: {fileID: 0}
   speed: 5
   damage: 10
@@ -7716,6 +7717,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: cooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 1872bfaf2a1854f5dbf1db8c4fac2f9f,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Spell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
