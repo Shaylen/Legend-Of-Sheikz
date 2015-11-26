@@ -177,7 +177,7 @@ ParticleAnimator:
     rgba: 32481
   worldRotationAxis: {x: 0, y: 0, z: 0}
   localRotationAxis: {x: 0, y: 0, z: 0}
-  sizeGrow: .075000003
+  sizeGrow: .150000006
   rndForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   damping: 1
@@ -237,7 +237,7 @@ ParticleAnimator:
     rgba: 4278236919
   worldRotationAxis: {x: 0, y: 0, z: 0}
   localRotationAxis: {x: 0, y: 0, z: 0}
-  sizeGrow: 10
+  sizeGrow: 20
   rndForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   damping: 1
@@ -282,8 +282,8 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .5
-  maxSize: .5
+  minSize: 1
+  maxSize: 1
   minEnergy: .400000006
   maxEnergy: .400000006
   minEmission: 1
@@ -309,19 +309,19 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .300000012
-  maxSize: .300000012
+  minSize: .600000024
+  maxSize: .600000024
   minEnergy: 1
   maxEnergy: 1
   minEmission: 75
   maxEmission: 75
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 0, z: 0}
-  rndVelocity: {x: .150000006, y: .100000001, z: .100000001}
+  rndVelocity: {x: .300000012, y: .200000003, z: .200000003}
   emitterVelocityScale: .0500000007
   tangentVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  rndAngularVelocity: 4.5
+  rndAngularVelocity: 9
   rndRotation: 1
   Simulate in Worldspace?: 1
   m_OneShot: 1
@@ -336,15 +336,15 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .25
-  maxSize: .25
+  minSize: .5
+  maxSize: .5
   minEnergy: 1
   maxEnergy: 1
   minEmission: 50
   maxEmission: 50
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 0, z: 0}
-  rndVelocity: {x: .5, y: .25, z: .5}
+  rndVelocity: {x: 1, y: .5, z: 1}
   emitterVelocityScale: .0500000007
   tangentVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
@@ -363,15 +363,15 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .0500000007
-  maxSize: .0500000007
+  minSize: .100000001
+  maxSize: .100000001
   minEnergy: 1
   maxEnergy: 1
   minEmission: 100
   maxEmission: 100
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 0, z: 0}
-  rndVelocity: {x: 2, y: 2, z: 2}
+  rndVelocity: {x: 4, y: 4, z: 4}
   emitterVelocityScale: .0500000007
   tangentVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
@@ -399,7 +399,9 @@ ParticleRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -410,7 +412,7 @@ ParticleRenderer:
   m_StretchParticles: 0
   m_LengthScale: 2
   m_VelocityScale: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 1
   UV Animation:
     x Tile: 1
     y Tile: 1
@@ -433,7 +435,9 @@ ParticleRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -444,7 +448,7 @@ ParticleRenderer:
   m_StretchParticles: 3
   m_LengthScale: 5
   m_VelocityScale: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 1
   UV Animation:
     x Tile: 1
     y Tile: 1
@@ -467,7 +471,9 @@ ParticleRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -478,7 +484,7 @@ ParticleRenderer:
   m_StretchParticles: 3
   m_LengthScale: 4
   m_VelocityScale: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 1
   UV Animation:
     x Tile: 1
     y Tile: 1
@@ -501,7 +507,9 @@ ParticleRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -512,7 +520,7 @@ ParticleRenderer:
   m_StretchParticles: 4
   m_LengthScale: 4
   m_VelocityScale: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 1
   UV Animation:
     x Tile: 1
     y Tile: 1
@@ -541,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e1509d9f3f62842a5854ccf48fb2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 10
   delayBeforeExlosion: 0
   knockbackForce: 0
   knockbackDuration: 0
@@ -566,7 +574,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: damage
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -37,7 +37,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 111224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70bba2dec444a543b0c336cf96975dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b7c16fa62816c24c91860bd6f3d4475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   additionalSpeed: 2
@@ -60,7 +60,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -80,6 +82,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300150, guid: 8a6e157a9205c8645ab01eb3dbcc78e6,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: additionalSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: multiplicativeSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111224}

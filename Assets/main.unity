@@ -98,10 +98,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11478660, guid: 9c9edea9c61bc9144830bfe653f2c64e, type: 2}
-      propertyPath: possibleSkillList.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 22443568, guid: 9c9edea9c61bc9144830bfe653f2c64e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -178,10 +174,6 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 194463586}
-    - target: {fileID: 11478660, guid: 9c9edea9c61bc9144830bfe653f2c64e, type: 2}
-      propertyPath: possibleSkillList.Array.data[1]
-      value: 
-      objectReference: {fileID: 111224, guid: 8db5e425f2848394588412e4e6d3e297, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c9edea9c61bc9144830bfe653f2c64e, type: 2}
   m_IsPrefabParent: 0

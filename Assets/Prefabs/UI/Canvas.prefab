@@ -1459,6 +1459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleSkillList:
   - {fileID: 183296, guid: 2edaf6d16c72c4b479e3b44604cc13f6, type: 2}
+  - {fileID: 111224, guid: 8db5e425f2848394588412e4e6d3e297, type: 2}
 --- !u!114 &11479354
 MonoBehaviour:
   m_ObjectHideFlags: 1

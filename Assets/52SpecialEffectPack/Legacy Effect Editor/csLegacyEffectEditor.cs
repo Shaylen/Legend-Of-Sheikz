@@ -19,7 +19,7 @@ public class csLegacyEffectEditor : EditorWindow
 	public static void Init()
 	{
         myWindow = EditorWindow.GetWindowWithRect<csLegacyEffectEditor>(new Rect(100, 100, 300, 220)); //set Editor Position and Size
-		myWindow.title = "Editor"; 
+        myWindow.titleContent.text = "Editor";
 	}
 
     void OnGUI()

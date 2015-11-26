@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f1ad702e2b42a4c86b78151e757563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rows: 50
-  columns: 50
-  roomsNumber: 25
+  rows: 60
+  columns: 60
+  roomsNumber: 30
   roomSize:
     minimum: 5
     maximum: 15
@@ -49,7 +49,7 @@ MonoBehaviour:
   spaceBetweenRooms: 1
   spaceBetweenCorridors: 1
   corridorMaxLength: 5
-  monsterNumber: 5
+  monsterNumber: 50
   torchNumber: 25
   distanceBetweenTorchs: 5
   floorTiles:
@@ -93,19 +93,19 @@ Prefab:
       objectReference: {fileID: 147878, guid: 71de1a9e908a9a84f986852ebf8a5f58, type: 2}
     - target: {fileID: 0}
       propertyPath: roomsNumber
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rows
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: columns
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: monsterNumber
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: roomSize.minimum
